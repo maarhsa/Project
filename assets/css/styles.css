@@ -1,0 +1,191 @@
+/*********************
+******* FOOTER *******
+*********************/
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333; /* Couleur de fond gris foncé */
+    color: #fff; /* Couleur du texte en blanc pour un meilleur contraste */
+}
+
+.footer p {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Espacement entre les images */
+    margin-top: 1rem;
+}
+
+.social-media img {
+    height: 42px;
+    width: 42px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .social-media {
+        gap: 0.5rem; /* Ajustement de l'espacement pour les écrans plus petits */
+    }
+
+    .social-media img {
+        height: 36px;
+        width: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-media img {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+/*********************
+******* HEADER *******
+*********************/
+.header {
+    background-color: #333; /* Couleur de fond gris foncé */
+    color: #fff; /* Couleur du texte en blanc */
+    padding: 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Ajustez la taille du logo selon vos besoins */
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #333; /* Couleur de fond gris foncé */
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background-color: #4CAF50; /* Couleur de survol vert */
+}
+
+.language-menu {
+    margin-left: auto;
+}
+
+.language-form {
+    display: flex;
+    align-items: center;
+}
+
+.language-selector {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #333; /* Couleur de fond gris foncé */
+    color: #fff;
+    cursor: pointer; /* Ajoute un curseur de pointeur pour l'effet de survol */
+}
+
+.language-selector:hover {
+    background-color: #4CAF50; /* Couleur de survol vert */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .language-menu {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu a {
+        padding: 0.5rem;
+    }
+
+    .language-selector {
+        padding: 0.25rem;
+    }
+}
+
+/********************
+******* INDEX *******
+********************/
+/* Styles de base */
+body {
+    background-color: #646567; /* Couleur de fond gris foncé */
+    color: #fff; /* Couleur du texte en blanc */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.login-section, .welcome-section, .attention-section {
+    flex: 1 1 45%;
+    margin: 10px;
+}
+
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image-box {
+    flex: 1 1 18%;
+    margin: 5px;
+    text-align: center;
+}
+
+/* Media queries pour la réactivité */
+@media (max-width: 768px) {
+    .login-section, .welcome-section, .attention-section {
+        flex: 1 1 100%;
+    }
+    .image-box {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-box {
+        flex: 1 1 100%;
+    }
+}
+
+
+/*******************
+**** CHANGELOG *****
+*******************/
+
