@@ -10,7 +10,7 @@
 	<br>
 	<br>
     <div class="container">
-		<div class="recovery-form">
+		<div class="resetpassword-form">
 			<h2>{reset_password_title}</h2>
 			<form method="POST">
 				<p class="error-message">{error_message}</p>

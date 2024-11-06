@@ -5,11 +5,6 @@ session_start(); // Démarre la session pour stocker la langue
 require_once 'db.php';
 require_once 'functions.php';
 
-// Vérifier si le mode maintenance est activé
-if (isMaintenanceMode()) {
-    die(&lang['maintenance_message']);
-}
-
 // Récupérer la langue sélectionnée, par défaut "fr"
 $langCode = $_GET['lang'] ?? $_SESSION['lang'] ?? 'fr';
 $_SESSION['lang'] = $langCode; // Sauvegarde la langue dans la session
@@ -17,6 +12,14 @@ $_SESSION['lang'] = $langCode; // Sauvegarde la langue dans la session
 // Charger le fichier de langue approprié
 $langFile = __DIR__ . "/lang/$langCode.php";
 $lang = file_exists($langFile) ? include($langFile) : include(__DIR__ . "/lang/fr.php");
+
+// Initialiser le message d'erreur d'inscription
+$registerError = '';
+
+// Vérifier si le mode maintenance est activé
+if (isMaintenanceMode()) {
+    die($lang['maintenance_message']);
+}
 
 // Charger les templates
 $template = file_get_contents(__DIR__ . '/templates/home/register.tpl');
@@ -56,6 +59,9 @@ foreach ($lang as $key => $value) {
 foreach ($lang as $key => $value) {
     $template = str_replace("{" . $key . "}", $value, $template);
 }
+
+// Ajouter le message d'erreur si l'inscription échoue ou le message de maintenance
+$template = str_replace("{error_message}", $registerError, $template);
 
 // Ajouter la classe selected pour la langue actuelle
 $template = str_replace("{selected_$langCode}", 'selected', $template);

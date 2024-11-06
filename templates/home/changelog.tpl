@@ -27,6 +27,9 @@
 	<br>
 	<br>
 	<br>
+	<br>
+	<br>
+	<br>
 	<!-- Inclusion du footer -->
     {footer}
 	

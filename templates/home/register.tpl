@@ -36,6 +36,8 @@
 		
                 <button type="submit">{register}</button>
             </form>
+			<!-- Placeholder pour le message d'erreur -->
+            <div class="error-message">{error_message}</div>
         </div>
     </div>
 	<br>

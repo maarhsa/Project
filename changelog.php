@@ -4,7 +4,22 @@ $changelog = [
 	'1.0' => [
 		'01000' => 'Alpha phase game launch',
 	],
+	'0.2' => [
+		'00045' => '',
+		'00044' => '',
+		'00043' => '',
+		'00042' => '',
+		'00041' => '',
+	],
     '0.1' => [
+		'00040' => '',
+		'00039' => '',
+		'00038' => '',
+		'00037' => '',
+		'00036' => '',
+		'00035' => '',
+		'00034' => 'FIX Maintenance Mode',
+		'00032' => 'Rework templates and CSS for responsive design',
 		'00031' => 'Adding risks to index.php',
 		'00030' => 'Fix all language files',
 		'00029' => 'Added a maintenance system blocking login and register',
@@ -56,7 +71,7 @@ foreach ($changelog as $version => $modifications) {
     $changelogContent .= '</div>';
     $changelogContent .= '<div class="modifications" id="modifications-' . $version . '">';
     foreach ($modifications as $modNumber => $description) {
-        $changelogContent .= '<div class="mod-item"><strong>' . $modNumber . ':</strong> ' . $description . '</div>';
+        $changelogContent .= '<div class="mod-item"><strong>' . $modNumber . '&ensp;:&ensp;</strong> ' . $description . '</div>';
     }
     $changelogContent .= '</div>';
 }

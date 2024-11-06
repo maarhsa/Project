@@ -24,7 +24,7 @@ $footerTemplate = file_get_contents(__DIR__ . '/../templates/footer.tpl');
 // Définir le lien admin pour l'utilisateur avec ID = 1
 $adminLink = '';
 if (isset($_SESSION['user_id']) && $_SESSION['user_id'] == 1) {
-    $adminLink = '<li><a href="admin/admin_dashboard.php">' . $lang['adm_dashboard'] . '</a></li>';
+    $adminLink = '<li><a href="../admin/admin_dashboard.php">' . $lang['adm_dashboard'] . '</a></li>';
 }
 
 // Remplacer les placeholders dans le menu
