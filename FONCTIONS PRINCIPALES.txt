@@ -1,0 +1,574 @@
+FONCTIONS PRINCIPALES
+
+1. les différents bâtiments :
+│
+├── cabane
+│   ├── capacité 10 plants
+│   ├── Possibilité d'acheter un kit de panneaux solaire pour diminuer la facture d'électricité. Achat via la boutique
+│   ├── Possibilité d'acheter une citerne d'eau de pluie pour diminuer la factures d'eau. Achat via la boutique
+│   ├── taxe foncière 500 WVC
+│   ├── Facture d'électricité
+│   ├── Facture d'eau
+│
+├── petite maison
+│   ├── capacité 20 plants
+│   ├── prix 70000 WVC
+│   ├── Possibilité d'acheter un kit de panneaux solaire pour diminuer la facture d'électricité. Achat via la boutique
+│   ├── Possibilité d'acheter une citerne d'eau de pluie pour diminuer la factures d'eau. Achat via la boutique
+│   ├── taxe foncière 1750 WVC
+│   ├── Facture d'électricité
+│   ├── Facture d'eau
+│
+├── maison
+│   ├── capacité 50 plants
+│   ├── prix 150000 WVC
+│   ├── Possibilité d'acheter un kit de panneaux solaire pour diminuer la facture d'électricité. Achat via la boutique
+│   ├── Possibilité d'acheter une citerne d'eau de pluie pour diminuer la factures d'eau. Achat via la boutique
+│   ├── taxe foncière 7500 WVC
+│   ├── Facture d'électricité
+│   ├── Facture d'eau
+│
+├── villa
+│   ├── capacité 90 plants
+│   ├── prix 500000 WVC
+│   ├── Possibilité d'acheter un kit de panneaux solaire pour diminuer la facture d'électricité. Achat via la boutique
+│   ├── Possibilité d'acheter une citerne d'eau de pluie pour diminuer la factures d'eau. Achat via la boutique
+│   ├── taxe foncière 25000 WVC
+│   ├── Facture d'électricité
+│   ├── Facture d'eau
+│
+├── fermette
+│   ├── capacité 200 plants
+│   ├── prix 2500000 WVC
+│   ├── Possibilité d'acheter un kit de panneaux solaire pour diminuer la facture d'électricité. Achat via la boutique
+│   ├── Possibilité d'acheter une citerne d'eau de pluie pour diminuer la factures d'eau. Achat via la boutique
+│   ├── taxe foncière 50000 WVC
+│   ├── Facture d'électricité
+│   ├── Facture d'eau
+│
+├── hangar
+│   ├── capacité 500 plants
+│   ├── prix 15000000 WVC
+│   ├── Possibilité d'acheter un kit de panneaux solaire pour diminuer la facture d'électricité. Achat via la boutique
+│   ├── Possibilité d'acheter une citerne d'eau de pluie pour diminuer la factures d'eau. Achat via la boutique
+│   ├── taxe foncière 100000 WVC
+│   ├── Facture d'électricité
+│   ├── Facture d'eau
+│
+
+2. La culture extérieur, on peut acheté des extensions au terrain comme ceci :
+│
+├── champs
+│   ├── le joueur encore lui même la nombres de m² qu'il veux acheter au minimum 50 m² et maximum 9999999999
+│   ├── le prix serait de 25000 WVC par 50m² acheté
+│   ├── la taxe foncière sur les terrains serait de 1000 WVC par 50m² possèdé
+
+
+
+3. Boutique du jeu
+│
+├── Graines de cannabis
+│   ├── Critical Kush
+	│  	├── 40 WVC
+│   ├── Cheese
+	│  	├── 35 WVC
+│   ├── White Widow
+	│  	├── 45 WVC
+│   ├── Bubble Gum
+	│  	├── 38 WVC
+│   ├── Jack Herer
+	│  	├── 50 WVC
+│   ├── Amnesia Haze
+	│  	├── 55 WVC
+│   ├── Gorilla
+	│  	├── 52 WVC
+│   ├── AK 47
+	│  	├── 42 WVC
+│   ├── Skunk
+	│  	├── 37 WVC
+│   ├── Purple
+	│  	├── 48 WVC
+│
+├── Pôt pour les culture
+│   ├── Pôt Geotextile
+	│	├── consommation d'eau augmenter de 15%
+	│  	├── Prix WVC
+		│  	├── 35 WVC
+│   ├── Pôt en plastique
+	│  	├── consommation d'eau diminué de 15%
+	│  	├── Prix WVC
+		│  	├── 50 WVC
+│   ├── Air Pots
+	│  	├── La consommation d'eau reste identique à la consommation de la plante
+	│  	├── Prix (monnaie premium du jeu (WVT)
+		│  	├── 50 WVT
+│
+├── Eclairage
+│   ├── Eclairage CFL (Compact Fluorescent Light)
+	│  	├── Description
+		│  	├── Les lampes fluorescentes compactes (CFL) sont adaptées pour la phase de croissance végétative des plantes. Elles sont économiques, mais moins efficaces que les LED et HPS pour la floraison.
+	│  	├── Avantages
+		│  	├── Coût très faible à l'achat. Consommation électrique diminué de 30%
+	│  	├── Inconvénients
+		│  	├── Rendement d'herbe diminué de 30%
+	│  	├── Prix
+		│  	├── 
+│   ├── Éclairage HPS (High Pressure Sodium)
+	│  	├── Description
+		│  	├── Les lampes à sodium haute pression (HPS) sont couramment utilisées pour la floraison, car elles émettent un spectre lumineux rouge/orange optimal pour cette phase. Elles sont efficaces mais consomment plus d'énergie que les LED.
+	│  	├── Avantages
+		│  	├── Très efficace pour la floraison, augmentation du rendement de production d'herbe de 15%, Coût initial abordable par rapport aux LED.
+	│  	├── Inconvénients
+		│  	├── Augmentation de la consommation électrique de électrique augmenter de 30%
+	│  	├── Prix
+		│  	├── 
+│   ├── Éclairage LED (Light Emitting Diodes)
+	│  	├── Description
+		│  	├── Les lampes LED sont très efficaces et durables. Elles consomment peu d'énergie tout en fournissant une lumière intense, adaptée à toutes les phases de croissance des plantes (croissance végétative et floraison).
+	│  	├── Avantages
+		│  	├── Diminution de la consommation électrique de 30%
+	│  	├── Inconvénients
+		│  	├── Coût initial élevé pour l'achat des lampes.
+	│  	├── Prix (monnaie premium WVT)
+		│  	├── 
+│
+├── Terreaux
+│   ├── Terreau (Sol classique)
+	│   ├── Description
+		│   ├── Un mélange naturel de matières organiques décomposées comme du compost, de la tourbe et de l'humus. Très nutritif, c'est l'un des substrats les plus utilisés pour la culture en extérieur.
+	│   ├── Avantages
+		│   ├── production d'herbe augmenter de 10%
+	│   ├── Inconvénients
+		│   ├── consommation d'eau augmenter de -10%
+	│   ├── Prix WVC
+		│   ├── 
+│   ├── Terre végétale sablonneuse
+	│   ├── Description
+		│   ├── Mélange de sol riche en sable, idéal pour les zones avec une bonne exposition au soleil. Le sable permet un bon drainage tout en favorisant l'aération des racines.
+	│   ├── Avantages
+		│   ├── Augmentation du rendement d'herbe de 15%
+	│   ├── Inconvénients
+		│   ├── Augmentation de la consommation d'eau de 20%
+	│   ├── Prix WVC
+		│   ├── 
+│   ├── Tourbe (Peat moss)
+	│   ├── Description
+		│   ├── Substrat naturel provenant de la décomposition lente de la végétation dans les tourbières. La tourbe retient bien l'eau et est souvent mélangée à d'autres substrats pour améliorer la structure du sol.
+	│   ├── Avantages
+		│   ├── Augmentation de la production d'herbe de 5%
+	│   ├── Inconvénients
+		│   ├── Diminution de la consommation d'eau de 15%
+	│   ├── Prix WVT
+		│   ├── 
+
+
+3. Boutique du jeu (suite)
+
+├──Système d'irrigation (permet aux joueurs d'arrosé de manière automatique ses culture, plus besoin de le faire manuellement)
+│   ├── Intérieur et extérieur
+	│   ├── Irrigation goutte à goutte
+		│   ├── Description
+			│   ├── Ce système délivre de l'eau directement aux racines des plantes à travers de petits goutteurs
+		│   ├── Avantage
+			│   ├── Diminution de la consommation d'eau de 15%
+		│   ├── Inconvénients
+			│   ├── Augmentation de la consommation électrique de 5%
+		│   ├── Prix
+			│   ├── 
+	│   ├── Irrigation par soaker hose
+		│   ├── Description
+			│   ├── Ce système utilise des tuyaux perforés qui délivrent de l'eau lentement et directement dans le sol
+		│   ├── Avantage
+			│   ├── Diminution de la consommation d'eau de 7,5%
+		│   ├── Inconvénients
+			│   ├── Augmentation de la facture électrique de 15%
+		│   ├── Prix
+			│   ├── 
+│
+├── Engrais
+│   ├── Engrais de Croissance
+		│   ├── Description
+			│   ├── L'engrais pour la phase de croissance végétative est riche en azote (N), un nutriment clé pour le développement des feuilles et des racines. Il favorise une croissance rapide et vigoureuse, permettant aux plantes de devenir plus grandes et plus fortes avant d'entrer dans la phase de floraison. Ce type d'engrais contient également une quantité modérée de phosphore (P) et de potassium (K), qui aident à la santé racinaire et au métabolisme global des plantes.
+		│   ├── Prix WVC
+			│   ├── 
+│   ├── Engrais de Floraison
+		│   ├── Description
+			│   ├── L'engrais pour la phase de floraison est plus riche en phosphore (P) et en potassium (K), des nutriments essentiels pour le développement des fleurs et la production de résine. Le phosphore aide à la formation des bourgeons et à la maturation des fleurs, tandis que le potassium améliore la qualité des têtes et leur densité. Ce type d'engrais contient moins d'azote, car un excès d'azote peut ralentir la floraison et réduire la qualité des têtes.
+		│   ├── Prix WVC
+			│   ├── 
+│
+├── Equipement supplémentaire du batiment
+│   ├── Panneaux solaire
+	│   ├── Description
+		│   ├── Les panneaux solaires convertissent l'énergie solaire en électricité pour alimenter les différents équipements de votre ferme. Ils permettent de réduire la dépendance aux sources d'énergie traditionnelles et d'économiser sur les factures d'électricité
+	│   ├── Prix WVC
+		│   ├── Cabane : 1 kit de 2 panneau solaire qui produit X WVC
+		│   ├── Petite maison : 1 kit de 6 panneaux solaire au prix de XX WVC
+		│   ├── Maison : 1 kit de 10 panneau solaire au prix de XX WVC
+		│   ├── Villa : 1 kit de 16 panneau solaire au prix de XX WVC
+		│   ├── Fermette : 1 kit de 30 panneaux solaire au prix de XX WVC
+		│   ├── Hangar : 1 kit de 100 panneaux solaire au prix de XX WVC
+	│
+│   ├── Citerne eau de pluie
+	│   ├── Description
+		│   ├── Les citernes d'eau de pluie collectent et stockent l'eau de pluie pour l'utiliser ultérieurement dans l'irrigation des cultures. Cela permet de réduire la consommation d'eau potable et de mieux gérer les ressources en eau.
+	│   ├── Prix WVC
+		│   ├── Cabane : 1 citerne de 100 litres au prix de XX WVC
+		│   ├── Petite maison : 1 citerne de 500 litres au prix de XX WVC
+		│   ├── Maison : 1 citerne de 1100 litres au prix de XX WVC
+		│   ├── Villa : 1 citerne de 1500 litres au prix de XX WVC
+		│   ├── Fermette : 1 citerne de 2000 litres au prix de XX WVC
+		│   ├── Hangar : 1 citerne de 5000 litres au prix de XX WVC
+
+
+
+4. Boutique premium qui donne des avantages
+│
+├── Pack WVT (WeedValleyToken)
+│
+│   ├── Pack WVT (WeedValleyToken) à 1,99 euros
+	│  	├── 500 WVT
+│   ├── Pack WVT (WeedValleyToken) à 4,99 euros
+	│  	├── 1250 WVT
+│   ├── Pack WVT (WeedValleyToken) à 9,99 euros
+	│  	├── 3000 WVT
+│   ├── Pack WVT (WeedValleyToken) à 19,99 euros
+	│  	├── 7500 WVT
+│   ├── Pack WVT (WeedValleyToken) à 49,99 euros
+	│  	├── 20000 WVT
+│   ├── Pack WVT (WeedValleyToken) à 99,99 euros
+	│  	├── 50000 WVT
+│
+├── Pass Premium qui donne l'avantage de réduire la taxe foncière de 20%, réduit les factures d'éléctricité de 15%, réduit les factures d'eau de 15%
+│
+│   ├── 1 mois d'abbonnement
+	│  	├── 3,99 euros
+│   ├── 3 mois d'abbonnement
+	│  	├── 7,99 euros
+│   ├── 6 mois d'abbonnement
+	│  	├── 14,99 euros
+│   ├── 12 mois d'abbonnement
+	│  	├── 24,99 euros
+
+
+
+5. La culture du cannabis intérieur ( ajout de nouveaux plant cultivable depuis le panneaux d'administration)
+│
+├── Critical Kush
+│   ├── Description
+	│   ├── Un hybride à dominante indica, connu pour ses effets relaxants et ses grosses têtes résineuses. Parfait pour une culture en extérieur en raison de sa robustesse. La Critical Kush, avec ses têtes denses et résineuses, produit une quantité généreuse de résine adaptée pour des extractions de haute qualité.
+│   ├── Prix des graines
+	│   ├── 40 WVC par graine
+│   ├── Consommation d'eau
+	│   ├── 5 litres par jour
+│   ├── Consommation électrique
+	│   ├── 2 kWh par semaine
+│   ├── Rendement en herbe
+	│   ├── 600 grammes par plant
+│   ├── Rendement en graines
+	│   ├── 3 graines par plant
+│   ├── Rendement résine si transformé
+	│   ├── 120 grammes par plant
+│
+├── Cheese
+│   ├── Description
+	│   ├── Un hybride à dominante indica, connu pour ses effets relaxants et ses grosses têtes résineuses. Parfait pour une culture en extérieur en raison de sa robustesse. Connue pour son arôme puissant, la Cheese est idéale pour la production de résine, bien que ses rendements soient légèrement inférieurs aux variétés plus résineuses.
+│   ├── Prix des graines
+	│   ├── 35WVC par graine
+│   ├── Consommation d'eau
+	│   ├── 4,5 litres par jour
+│   ├── Consommation électrique
+	│   ├── 1,8 kWh par semaine
+│   ├── Rendement en herbe
+	│   ├── 550 grammes par plant
+│   ├── Rendement en graines
+	│   ├── 4 graines par plant
+│   ├── Rendement résine si transformé
+	│   ├── 100 grammes par plant
+│
+├── White Widow
+│   ├── Description
+	│   ├── Un hybride à dominante indica, connu pour ses effets relaxants et ses grosses têtes résineuses. Parfait pour une culture en extérieur en raison de sa robustesse. La White Widow est une variété très riche en trichomes, ce qui la rend particulièrement adaptée pour l'extraction de résine.
+│   ├── Prix des graines
+	│   ├── 45 WVC par graine
+│   ├── Consommation d'eau
+	│   ├── 6 litres par jour
+│   ├── Consommation électrique
+	│   ├── 2,5 kWh par semaine
+│   ├── Rendement en herbe
+	│   ├── 700 grammes par plant
+│   ├── Rendement en graines
+	│   ├── 3 graines par plant
+│   ├── Rendement résine si transformé
+	│   ├── 140 grammes par plant
+│
+├── Bubble Gum
+│   ├── Description
+	│   ├── Un hybride à dominante indica, connu pour ses effets relaxants et ses grosses têtes résineuses. Parfait pour une culture en extérieur en raison de sa robustesse. Bien que la Bubble Gum soit plus légère en termes de production de résine, son goût doux et fruité en fait une candidate de choix pour la transformation.
+│   ├── Prix des graines
+	│   ├── 38 WVC par graine
+│   ├── Consommation d'eau
+	│   ├── 4,8 litres par jour
+│   ├── Consommation électrique
+	│   ├── 2 kWh par semaine
+│   ├── Rendement en herbe
+	│   ├── 500 grammes par plant
+│   ├── Rendement en graines
+	│   ├── 3 graines par plant
+│   ├── Rendement résine si transformé
+	│   ├── 90 grammes par plant
+│
+├── Jack Herer
+│   ├── Description
+	│   ├── Un hybride à dominante indica, connu pour ses effets relaxants et ses grosses têtes résineuses. Parfait pour une culture en extérieur en raison de sa robustesse. La Jack Herer, une variété à dominance sativa, est réputée pour ses effets énergétiques et sa capacité à produire une grande quantité de résine.
+│   ├── Prix des graines
+	│   ├── 50 WVC par graine
+│   ├── Consommation d'eau
+	│   ├── 7 litres par jour
+│   ├── Consommation électrique
+	│   ├── 3 kWh par semaine
+│   ├── Rendement en herbe
+	│   ├── 750 grammes par plant
+│   ├── Rendement en graines
+	│   ├── 4 graines par plant
+│   ├── Rendement résine si transformé
+	│   ├── 160 grammes par plant
+│
+├── Amnesia Haze
+│   ├── Description
+	│   ├── Un hybride à dominante indica, connu pour ses effets relaxants et ses grosses têtes résineuses. Parfait pour une culture en extérieur en raison de sa robustesse. Connue pour sa forte teneur en THC, l'Amnesia Haze produit une résine de haute qualité, bien que la culture en extérieur demande une attention particulière.
+│   ├── Prix des graines
+	│   ├── 55 WVC par graine
+│   ├── Consommation d'eau
+	│   ├── 7,5 litres par jour
+│   ├── Consommation électrique
+	│   ├── 3,2 kWh par semaine
+│   ├── Rendement en herbe
+	│   ├── 800 grammes par plant
+│   ├── Rendement en graines
+	│   ├── 3 graines par plant
+│   ├── Rendement résine si transformé
+	│   ├── 150 grammes par plant
+│
+├── Gorilla
+│   ├── Description
+	│   ├── Un hybride à dominante indica, connu pour ses effets relaxants et ses grosses têtes résineuses. Parfait pour une culture en extérieur en raison de sa robustesse. Cette variété à forte teneur en THC et ses têtes collantes offrent un bon rendement en résine, idéale pour des extractions concentrées.
+│   ├── Prix des graines
+	│   ├── 52 WVC par graine
+│   ├── Consommation d'eau
+	│   ├── 6,8 litres par jour
+│   ├── Consommation électrique
+	│   ├── 2,8 kWh par semaine
+│   ├── Rendement en herbe
+	│   ├── 700 grammes par plant
+│   ├── Rendement en graines
+	│   ├── 4 graines par plant
+│   ├── Rendement résine si transformé
+	│   ├── 130 grammes par plant
+│
+├── AK 47
+│   ├── Description
+	│   ├── Un hybride à dominante indica, connu pour ses effets relaxants et ses grosses têtes résineuses. Parfait pour une culture en extérieur en raison de sa robustesse. L'AK 47, une sativa bien équilibrée, produit une quantité moyenne de résine mais reste une excellente option pour des extractions simples.
+│   ├── Prix des graines
+	│   ├── 42 WVC par graine
+│   ├── Consommation d'eau
+	│   ├── 5,5 litres par jour
+│   ├── Consommation électrique
+	│   ├── 2 kWh par semaine
+│   ├── Rendement en herbe
+	│   ├── 600 grammes par plant
+│   ├── Rendement en graines
+	│   ├── 3 graines par plant
+│   ├── Rendement résine si transformé
+	│   ├── 110 grammes par plant
+│
+├── Skunk
+│   ├── Description
+	│   ├── Un hybride à dominante indica, connu pour ses effets relaxants et ses grosses têtes résineuses. Parfait pour une culture en extérieur en raison de sa robustesse. La Skunk est une variété polyvalente, mais son rendement en résine est légèrement inférieur comparé à d'autres souches.
+│   ├── Prix des graines
+	│   ├── 37 WVC par graine
+│   ├── Consommation d'eau
+	│   ├── 5 litres par jour
+│   ├── Consommation électrique
+	│   ├── 1,8 kWh par semaine
+│   ├── Rendement en herbe
+	│   ├── 550 grammes par plant
+│   ├── Rendement en graines
+	│   ├── 4 graines par plant
+│   ├── Rendement résine si transformé
+	│   ├── 100 grammes par plant
+│
+├── Purple
+│   ├── Description
+	│   ├── Un hybride à dominante indica, connu pour ses effets relaxants et ses grosses têtes résineuses. Parfait pour une culture en extérieur en raison de sa robustesse. La Purple, avec ses teintes violettes distinctes, produit une résine de bonne qualité et en quantité raisonnable, parfaite pour les amateurs de haschich coloré
+│   ├── Prix des graines
+	│   ├── 48 WVC par graine
+│   ├── Consommation d'eau
+	│   ├── 6 litres par jour
+│   ├── Consommation électrique
+	│   ├── 2,5 kWh par semaine
+│   ├── Rendement en herbe
+	│   ├── 650 grammes par plant
+│   ├── Rendement en graines
+	│   ├── 3 graines par plant
+│   ├── Rendement résine si transformé
+	│   ├── 115 grammes par plant
+
+
+6. La culture du cannabis en extérieur se fait obligatoirement en 15 jours
+│
+├── Pour chaque plant
+│   ├── consommation d'eau
+	│   ├── identique à l'intérieur
+│   ├── rendement en herbe
+	│   ├── identique à l'intérieur
+│   ├── consommation électrique
+	│   ├── aucune
+
+	
+7. Ligne du temps de culture simplifiée (15 jours)
+│
+├── Germination (1 jours)
+│   ├── Durée
+	│   ├── 1 jour
+│   ├── Description
+	│   ├── La graine est placée dans un environnement humide et commence à germer. Les racines primaires apparaissent.
+│   ├── Action du joueur
+	│   ├── Humidification (Pas de consommation d'eau)
+│
+├── Croissance (6 jours)
+│   ├── Durée
+	│   ├── 6 jours
+│   ├── Description
+	│   ├── La plante développe ses premières feuilles et commence à croître en taille. C’est la phase où elle devient plus résistante.
+│   ├── Action du joueur
+	│   ├── Apport d'eau régulier, exposition à la lumière (réglage lumirère sur croissance 18h par jours), ajout de nutriments pour accélérer la croissance.riments pour accélérer la croissance. Un délais de 1 jour est accorder au joueur pour changer l'exposition à la lumière sinon les plants meurt.
+│
+├── Floraison (5 jours)
+│   ├── Durée
+	│   ├── 5 jours
+│   ├── Description
+	│   ├── Les premières fleurs commencent à apparaître. La plante se concentre sur la production de têtes riches en résine. Les trichomes se développent.
+│   ├── Action du joueur
+	│   ├── Exposition à la lumière (réglage lumirère sur croissance 12h par jours) et des nutriments, avec un apport en engrais de floraison pour favoriser la floraison. Un délais de 1 jour est accorder au joueur pour changer l'exposition à la lumière sinon la plante continuera son cycle et ne produira que des graines avec une pénalité de 50%.
+│
+├── Récolte d'herbe (Jour 12-14)
+│   ├── Durée
+	│   ├── 3 jours
+│   ├── Description
+	│   ├── La plante atteint sa maturité, et est prête pour la récolte d'herbe.
+│   ├── Action du joueur
+	│   ├── Récolte manuelle des têtes avant la fin du cycle ou maintien pour la production de graines.
+│
+├── Récolte des graines (Jour 15)
+│   ├── Durée
+	│   ├── 1 jour
+│   ├── Description
+	│   ├── Si le joueur laisse la plante aller jusqu'à la fin complète de son cycle, la plante produira des graines pour la prochaine culture.
+│   ├── Action du joueur
+	│   ├── Le joueur peut récolter les graines produite.
+│
+├── Évènement spécial : Récolte prématurée (À tout moment après la croissance)
+│   ├── Effet
+	│   ├── Si un événement survient (météo défavorable, incendies, infestation de nuisibles), le joueur peut récolter les plantes prématurément pour éviter de tout perdre.
+│   ├── Désavantage
+	│   ├── La récolte prématurée entraîne une réduction du rendement en herbe et en résine (-50%).
+
+
+
+8. Evenement aléatoire sur une période de XX jours
+│
+├── Conditions météorologiques favorables (Avantage)
+│   ├── Effet
+	│   ├── Une longue période de soleil et chaleur optimale permet aux plantes de croître plus vite et d'augmenter la production de résine.
+│   ├── Avantage
+	│   ├── +20% de rendement de la récolte
+│
+├── Sécheresse estivale (Désavantage)
+│   ├── Effet
+	│   ├── Une période de sécheresse prolongée affecte la croissance des plantes si aucune irrigation n'est installée.
+│   ├── Désavantage
+	│   ├── -15% de rendement à moins de compenser avec des systèmes d'irrigation (option d'achat).
+│
+├── Attaque de nuisibles (Désavantage)
+│   ├── Effet
+	│   ├── Invasion de chenilles ou pucerons qui mangent les feuilles et ralentissent la croissance.
+│   ├── Désavantage
+	│   ├── -10% de rendement.
+│
+├── Infection par des champignons (Désavantage)
+│   ├── Effet
+	│   ├── L'humidité élevée favorise la prolifération de moisissures comme le Botrytis qui pourrit les fleurs.
+│   ├── Désavantage
+	│   ├── -25% de rendement
+│
+├── Irrigation optimisée (Avantage)
+│   ├── Effet
+	│   ├── L'installation d'un système de goutte-à-goutte permet d'améliorer l'efficacité de l'irrigation pendant les périodes sèches.
+│   ├── Avantage
+	│   ├── +15% de rendement.
+│
+├── Vent fort et tempêtes (Désavantage)
+│   ├── Effet
+	│   ├── Des vents violents et des tempêtes causent des dommages physiques aux plantes.
+│   ├── Désavantage
+	│   ├── -20% de rendement.
+│
+├── Engrais biologiques (Avantage)
+│   ├── Effet
+	│   ├── Utilisation d'engrais biologiques qui boostent la croissance et améliorent la qualité des têtes.
+│   ├── Avantage
+	│   ├── +10% de rendement.
+│
+├── Phase lunaire favorable (Avantage)
+│   ├── Effet
+	│   ├── La plantation et les soins des plantes sont effectués pendant une phase lunaire ascendante, stimulant leur développement.
+│   ├── Avantage
+	│   ├── +10% de rendement.
+│
+├── Incendie (Désavantage)
+│   ├── Effet
+	│   ├── Un incendie c'est déclaré et la culture à été totalement détruite.
+│   ├── Désavantage
+	│   ├── Destruction totale de la culture
+
+
+9. Le système de mission se trouve en 4 catégorie
+│
+├── Mission de type 1 (réinitialisé tous les 15 jours)
+│   ├── 
+│   ├── 
+│   ├── 
+│   ├── 
+│
+├── Mission de type 2 (réinitialisé tous les 31 jours)
+│   ├── 
+│   ├── 
+│   ├── 
+│   ├── 
+│
+├── Mission sans limite de temps (pas de temps limite pour réalisé la mission, mais un compte à rebour pour refaire la mission)
+│   ├── 
+│   ├── 
+│   ├── 
+│   ├── 
+
+
+
+10. Les différents forme de transformation du cannabis ( Disponible au lancement du jeu, d'autre feront leurs apparition plus tard)
+│
+├── Fleurs
+├── Résine
+
+
+11. Un système de cache (Qui permettra aux joueurs stocker une partie ou totalité de leurs récolte afin de les protéger des évènement ou des pillages effectuée par d'autres joueurs) achetable via la boutique
+│
+├── Petite cache
+│   ├── Capacité de 5000 grammes
+│   ├── prix XXXX WVC
+├── Grande cache
+│   ├── Capacité de 50000 grammes
+│   ├── prix XXXX WVC
+├── Cache premium
+│   ├── Capacité de 250000 grammes
+│   ├── prix de XXXX WVT
