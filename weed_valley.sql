@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mer. 30 oct. 2024 à 18:51
+-- Généré le : jeu. 07 nov. 2024 à 17:14
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
 
@@ -55,6 +55,25 @@ CREATE TABLE `password_resets` (
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `settings`
+--
+
+CREATE TABLE `settings` (
+  `id` int(11) NOT NULL,
+  `default_credits` int(11) DEFAULT 100,
+  `default_buds` int(11) DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Déchargement des données de la table `settings`
+--
+
+INSERT INTO `settings` (`id`, `default_credits`, `default_buds`) VALUES
+(1, 5000, 100);
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `users`
 --
 
@@ -65,15 +84,18 @@ CREATE TABLE `users` (
   `password` varchar(255) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `recovery_word` varchar(255) NOT NULL,
-  `is_online` tinyint(1) DEFAULT 0
+  `is_online` tinyint(1) DEFAULT 0,
+  `credits` int(11) DEFAULT 0,
+  `buds` int(11) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Déchargement des données de la table `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `email`, `password`, `created_at`, `recovery_word`, `is_online`) VALUES
-(1, 'maarhsa', 'rouet.christopher@gmail.com', '$2y$10$5yioxFJknDUniZ84w109Su5W3rBPo.aa69kUYAPOCIIYhs/HnWWIO', '2024-10-30 08:45:03', 'saturn', 0);
+INSERT INTO `users` (`id`, `username`, `email`, `password`, `created_at`, `recovery_word`, `is_online`, `credits`, `buds`) VALUES
+(1, 'maarhsa', 'rouet.christopher@gmail.com', '$2y$10$z62ELcjncsg1AOn/iyK2S.ErWC0323J5BicA9DtZhOefuJNWpI49u', '2024-10-30 08:45:03', 'saturn', 0, 150000, 2500),
+(7, 'darcko', 'bibou@cgt.be', '$2y$10$2un15/B7dxKxZonVDSX9.udg7uH7aNOs6XvhgbMVtlZpUt604OGeS', '2024-11-07 11:58:59', 'anal', 0, 5000, 100);
 
 --
 -- Index pour les tables déchargées
@@ -91,6 +113,12 @@ ALTER TABLE `config`
 ALTER TABLE `password_resets`
   ADD PRIMARY KEY (`id`),
   ADD KEY `user_id` (`user_id`);
+
+--
+-- Index pour la table `settings`
+--
+ALTER TABLE `settings`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `users`
@@ -115,10 +143,16 @@ ALTER TABLE `password_resets`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- AUTO_INCREMENT pour la table `settings`
+--
+ALTER TABLE `settings`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Contraintes pour les tables déchargées
