@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>{title}</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/game_styles.css">
+	<script src="assets/jquery/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="assets/css/all.min.css">
 </head>
 <body>
     <!-- Inclusion du game_menu -->
