@@ -36,9 +36,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 	$recovery_word = $_POST['recovery_word'];
+	$defaultBalances = getDefaultBalances();
+	$defaultCredits = $defaultBalances['default_credits'];
+	$defaultBuds = $defaultBalances['default_buds'];
 
-    $stmt = $pdo->prepare('INSERT INTO users (username, email, password, recovery_word) VALUES (?, ?, ?, ?)');
-    $stmt->execute([$username, $email, $password, $recovery_word]);
+    $stmt = $pdo->prepare('INSERT INTO users (username, email, password, recovery_word, credits, buds) VALUES (?, ?, ?, ?, ?, ?)');
+    $stmt->execute([$username, $email, $password, $recovery_word, $defaultCredits, $defaultBuds]);
 
     // Redirection vers index.php après l'inscription réussie
     header('Location: index.php');

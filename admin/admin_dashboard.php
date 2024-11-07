@@ -20,6 +20,19 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_id'] != 1) {
     exit;
 }
 
+// Initialiser le message de mise à jour
+$updateMessage = '';
+
+// Vérifier si le formulaire a été soumis pour modifier les soldes de départ
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_balances'])) {
+    $defaultCredits = (int) $_POST['default_credits'];
+    $defaultBuds = (int) $_POST['default_buds'];
+
+    // Mettre à jour les valeurs dans la base de données
+    updateDefaultBalances($defaultCredits, $defaultBuds);
+    $updateMessage = $lang['update_start_money_success'];
+}
+
 // Activer/désactiver le mode maintenance selon le bouton cliqué
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['enable_maintenance'])) {
@@ -47,6 +60,9 @@ $query_total = "SELECT COUNT(*) as total_count FROM users";
 $stmt_total = $pdo->query($query_total);
 $total_count = $stmt_total->fetch()['total_count'];
 
+// Obtenir les valeurs actuelles pour les afficher dans le formulaire (player start money)
+$defaultBalances = getDefaultBalances();
+
 // Charger les templates
 $template = file_get_contents(__DIR__ . '/../templates/admin/admin_dashboard.tpl');
 $menuTemplate = file_get_contents(__DIR__ . '/../templates/admin/admin_menu.tpl');
@@ -63,6 +79,11 @@ $template = str_replace("{enable_button_text}", $lang['enable_button'], $templat
 $template = str_replace("{disable_button_text}", $lang['disable_button'], $template);
 $template = str_replace("{total_users_label}", $lang['total_users_label'], $template);
 $template = str_replace("{online_users_label}", $lang['online_users_label'], $template);
+
+// Remplacer les valeurs par défaut et le message de mise à jour dans le template pour le solde de départ
+$template = str_replace("{default_credits}", $defaultBalances['default_credits'], $template);
+$template = str_replace("{default_buds}", $defaultBalances['default_buds'], $template);
+$template = str_replace("{update_message}", $updateMessage, $template);
 
 // Appliquer des classes CSS conditionnelles pour les boutons de maintenance
 $template = str_replace("{enable_button_class}", $maintenanceMode ? 'button-inactive' : 'button-active', $template);

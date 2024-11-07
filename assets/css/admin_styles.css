@@ -83,7 +83,7 @@ body {
 /*****************
 ***** ADMIN *****
 *****************/
-.admin-form, .dashboard-stats, .maintenance-control {
+.admin-form, .dashboard-stats, .maintenance-control, .initial-credit {
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
@@ -93,7 +93,7 @@ body {
   color: white;
 }
 
-.admin-form h2, .dashboard-stats h3, .maintenance-control h2 {
+.admin-form h2, .dashboard-stats h3, .maintenance-control h2, .initial-credit h2 {
   text-align: center;
   margin-bottom: 20px;
 }
@@ -136,8 +136,31 @@ body {
   background: #e74c3c;
 }
 
+.initial-credit form {
+  display: flex;
+  flex-direction: column;
+}
+
+.initial-credit label {
+  margin-top: 10px;
+}
+
+.initial-credit button {
+  margin-top: 20px;
+  background: #0dbc3a;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.initial-credit button:hover {
+  background: #0a9b2a;
+}
+
 @media all and (max-width: 900px) {
-  .admin-form, .dashboard-stats, .maintenance-control {
+  .admin-form, .dashboard-stats, .maintenance-control, .initial-credit {
     padding: 10px;
   }
 
@@ -163,11 +186,11 @@ body {
   background: #151515;
   padding-top: 20px;
   transition: transform 0.3s ease;
-  transform: translateX(0); /* Visible par défaut sur les grands écrans */
+  transform: translateX(0); /* Visible par défaut */
 }
 
-.navbar.active {
-  transform: translateX(0);
+.navbar.closed {
+  transform: translateX(-100%); /* Caché lorsqu'elle est fermée */
 }
 
 .menu {
@@ -193,18 +216,28 @@ body {
   background: #0dbc3a;
 }
 
-/* Bouton pour ouvrir/fermer le menu */
-.menu-toggle {
-  display: none;
-  position: absolute;
-  top: 20px;
-  left: 20px;
+/* Boutons pour ouvrir/fermer le menu */
+.menu-toggle, .close-btn {
   background: #0dbc3a;
   color: white;
   padding: 10px;
   cursor: pointer;
   border: none;
   border-radius: 5px;
+  font-size: 18px; /* Taille de la police */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+}
+
+.menu-toggle {
+  left: 20px;
+}
+
+.close-btn {
+  right: 20px;
 }
 
 /* Styles pour les petits écrans */
@@ -220,5 +253,8 @@ body {
   .menu-toggle {
     display: block;
   }
-}
 
+  .close-btn {
+    display: block;
+  }
+}

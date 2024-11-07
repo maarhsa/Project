@@ -56,7 +56,7 @@ return [
     'invalid_recovery_info' => "Les informations de récupération sont incorrectes.",
 	'submit_button' => "envoyer",
 
-    // Labels pour les formulaires de réinitialisation et de récupération
+    // Formulaires de réinitialisation et de récupération de mot de passe
     'forgot_password_title' => "Mot de passe oublié",
     'reset_password_title' => "Réinitialiser le mot de passe",
     'new_password_label' => "Nouveau mot de passe",
@@ -69,6 +69,10 @@ return [
 	
 	// *** Dashboard
 	'dashboard' => "Panneau du joueur",
+	
+	// *** header
+	'cred' => "Crédits",
+	'bud' => "Buds",
 
 	// *** Game_menu
 	'logout' => "Se déconnecter",
@@ -90,4 +94,9 @@ return [
     'total_users_label' => "Nombre total de joueurs inscrits :",
     'online_users_label' => "Nombre de joueurs connectés actuellement :",
     'admin_dashboard_title' => "Admin Dashboard",
+	'initial_money_title' => "Monnaie initiale à l'Inscription",
+	'cred_start' => "Crédits de départ :",
+	'bud_start' => "Buds de départ :",
+	'update' => "Mettre à jour",
+	'update_start_money_success' => "Les soldes de départ ont été mis à jour avec succès.",
 ];

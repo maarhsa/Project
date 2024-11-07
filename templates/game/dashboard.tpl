@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="assets/css/all.min.css">
 </head>
 <body>
+	<!-- Inclusion du header -->
+    {header}
     <!-- Inclusion du game_menu -->
     {menu}
 	<br>
